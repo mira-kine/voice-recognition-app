@@ -55,7 +55,6 @@ Hello World this is my first speech recognition!</textarea
       }
 
       // make function to set and change voices
-
       function setVoice() {
         // find the voice that lines up with the value in the drop down -> corresponding
         // speechSynthesisVoice object in the voices array
@@ -74,13 +73,16 @@ Hello World this is my first speech recognition!</textarea
       // function to set options
       function setOption() {
         console.log(this.name, this.value);
+        msg[this.name] = this.value;
+        toggle();
       }
       // then make it an event listener
       speechSynthesis.addEventListener('voiceschanged', populateVoices);
       voicesDropdown.addEventListener('change', setVoice);
-
       //for each option we will add an event listener
       options.forEach((option) => option.addEventListener('change', setOption));
+      speakButton.addEventListener('click', toggle);
+      stopButton.addEventListener('click', () => toggle(false));
     </script>
   </body>
 </html>
