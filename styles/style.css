@@ -66,14 +66,14 @@ input[type='select'] {
 }
 
 .voice-recognizer button {
-  background: #ffc600;
+  background: white;
   border: 0;
   width: 49%;
   float: left;
   font-family: monospace;
   margin-bottom: 0;
   font-size: 2rem;
-  border-bottom: 5px solid #f3c010;
+  border-bottom: 5px solid;
   cursor: pointer;
   position: relative;
 }
