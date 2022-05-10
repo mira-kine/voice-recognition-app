@@ -1,3 +1,9 @@
+/* font-family: 'Inconsolata', monospace;
+font-family: 'Monoton', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Zen Maru Gothic', sans-serif; */
+
 html {
   font-size: 10px;
   box-sizing: border-box;
@@ -12,8 +18,10 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: monospace;
-  background-color: aliceblue;
+  font-family: 'Inconsolata', monospace;
+  font-size: 2rem;
+  background-image: url('../assets/sky.jpeg');
+  background-size: cover;
   display: flex;
   min-height: 100vh;
   align-items: center;
@@ -35,13 +43,13 @@ h1 {
   width: calc(100% + 4rem);
   margin: -2rem 0 2rem -2rem;
   padding: 0.5rem;
-  background: #ffc600;
-  border-bottom: 5px solid #f3c010;
+  background: #8F8073;
+  border-bottom: 5px solid #EAE6E5;
   text-align: center;
   font-size: 5rem;
-  font-weight: 100;
-  font-family: monospace;
-  text-shadow: 3px 3px 0 #f3c010;
+  font-weight: 300;
+  font-family: 'Inconsolata', monospace;
+  text-shadow: 2px 2px 3px #12130F;
 }
 
 .voice-recognizer input,
@@ -70,7 +78,7 @@ input[type='select'] {
   border: 0;
   width: 49%;
   float: left;
-  font-family: monospace;
+  font-family: 'Inconsolata', monospace;
   margin-bottom: 0;
   font-size: 2rem;
   border-bottom: 5px solid;
