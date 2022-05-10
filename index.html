@@ -8,11 +8,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;800&family=Monoton&family=Nunito:ital,wght@0,300;0,400;1,300;1,400&family=Permanent+Marker&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css" />
-    <title>Let me see your voice</title>
+    <title>Easy Reading</title>
   </head>
   <body>
     <div class="voice-recognizer">
-      <h1>Let Me See Your Voice</h1>
+      <div id="header">
+        <h1>Easy Listening</h1>
+      </div>
       <select name="voice" id="voices">
         <option value="">Select A Voice</option>
       </select>
@@ -26,7 +28,7 @@
       <button id="stop">Stop!</button>
       <button id="speak">Speak</button>
     </div>
-    <script type="module" src="./app.js">
+    <script>
       // using in-line script to trigger events on page load rather than external file
       // because it is simple event listeners
 

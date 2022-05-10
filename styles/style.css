@@ -1,8 +1,15 @@
 /* font-family: 'Inconsolata', monospace;
-font-family: 'Monoton', cursive;
 font-family: 'Nunito', sans-serif;
 font-family: 'Permanent Marker', cursive;
 font-family: 'Zen Maru Gothic', sans-serif; */
+* {
+  --color-1: #12130F;
+  --color-2: #5B9279;
+  --color-3: #8FCB9B;
+  --color-4: #EAE6E5;
+  --color-5: #EEE2DF;
+  --color-6: #8F8073;
+}
 
 html {
   font-size: 10px;
@@ -33,23 +40,28 @@ body {
   margin: 0 auto;
   border-radius: 1rem;
   position: relative;
-  background: olivedrab;
+  background: var(--color-2);
   overflow: hidden;
   z-index: 1;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+#header {
   width: calc(100% + 4rem);
+  background: var(--color-2);
   margin: -2rem 0 2rem -2rem;
-  padding: 0.5rem;
-  background: #8F8073;
-  border-bottom: 5px solid #EAE6E5;
+}
+
+h1 {
+  /* padding: 0.5rem; */
+  border: 5px solid #8FCB9B;
   text-align: center;
   font-size: 5rem;
-  font-weight: 300;
+  font-weight: 450;
   font-family: 'Inconsolata', monospace;
-  text-shadow: 2px 2px 3px #12130F;
+  border-bottom: 5px solid var(--color-3);
+  color: var(--color-4);
+  text-shadow: 2px 2px 3px var(--color-1);
 }
 
 .voice-recognizer input,
@@ -62,19 +74,25 @@ h1 {
   padding: 10px;
   border: 0;
   font-size: 2rem;
-  background: #f7f7f7;
+  background: #12130F;
+  color: var(--color-5);
   outline: 0;
+  border-radius: 1rem;
 }
 
 textarea {
   height: 20rem;
+  color: var(--color-5);
+  font-family: 'Inconsolata', monospace;
 }
 
 input[type='select'] {
+  font-family: 'Inconsolata', monospace;
 }
 
 .voice-recognizer button {
-  background: white;
+  background: var(--color-5);
+  color: var(--color-1);
   border: 0;
   width: 49%;
   float: left;
